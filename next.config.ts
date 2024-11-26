@@ -1,8 +1,11 @@
-import type { NextConfig } from "next";
+// next.config.ts
+const withLess = require('next-with-less');
 
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = withLess({
+  lessLoaderOptions: {
+    lessOptions: {
+      javascriptEnabled: true,
+    },
+  },
   reactStrictMode: true,
-};
-
-export default nextConfig;
+});
