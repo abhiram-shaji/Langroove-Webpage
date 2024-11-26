@@ -1,21 +1,88 @@
 /* src/styles/globals.css */
 
-/* Poppins for the body */
+/* General styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
   margin: 0;
-  padding: 0;
 }
 
-/* Allerta for headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Allerta', sans-serif;
-  text-align: center;
-  margin: 20px 0;
+section {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-p {
-  text-align: center;
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full height for the hero section */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Hero section styles (mobile-first) */
+.hero-text {
+  display: flex;
+  flex-direction: column; /* Stack content vertically for mobile */
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9); /* Transparent background for text */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%; /* Responsive width for mobile */
+  text-align: center; /* Center-align text on mobile */
+  gap: 20px; /* Add space between content and image */
+}
+
+.hero-text-content {
+  flex: 1;
+}
+
+.hero-text-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero text image styles */
+.hero-text-image img {
+  max-width: 50%; /* Adjust image size for mobile */
+  height: auto;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: purple;
+}
+
+/* Desktop-specific hero text styles */
+@media (min-width: 769px) {
+  .hero-section {
+    padding-left: 50px;
+    flex-direction: row; /* Arrange items side by side */
+    justify-content: flex-start; /* Align content to the left */
+  }
+
+  .hero-text-image img {
+    max-width: 100%;
+  }
+
+  .hero-text {
+    padding: 50px;
+    flex-direction: row; /* Arrange text and image side by side */
+    max-width: 60%; /* Limit width of the transparent section */
+    gap: 40px; /* Larger gap for desktop view */
+  }
 }

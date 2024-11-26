@@ -12,8 +12,6 @@ const Home: React.FC = () => {
     <div>
       <HeroSection {...heroSection} />
       <FeaturesSection coreFeatures={featuresSection.coreFeatures} />
-      <TestimonialsSection testimonials={testimonialsSection.testimonials} />
-      <ScreenshotsSection {...screenshotsSection} />
       <Footer {...footer} />
     </div>
   );
