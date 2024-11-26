@@ -1,14 +1,22 @@
-// src/pages/index.tsx
-import { Typography, Button } from 'antd';
+import HeroSection from "../components/HeroSection";
+import FeaturesSection from "../components/FeaturesSection";
+import TestimonialsSection from "../components/TestimonialsSection";
+import ScreenshotsSection from "../components/ScreenshotsSection";
+import Footer from "../components/Footer";
+import dataHome from "../../data/dataHome";
 
-const { Title, Paragraph } = Typography;
+const Home: React.FC = () => {
+  const { heroSection, featuresSection, testimonialsSection, screenshotsSection, footer } = dataHome;
 
-export default function Home() {
   return (
-    <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <Title>Hello World</Title>
-      <Paragraph>Welcome to my Next.js app with Ant Design!</Paragraph>
-      <Button type="primary">Click Me</Button>
+    <div>
+      <HeroSection {...heroSection} />
+      <FeaturesSection coreFeatures={featuresSection.coreFeatures} />
+      <TestimonialsSection testimonials={testimonialsSection.testimonials} />
+      <ScreenshotsSection {...screenshotsSection} />
+      <Footer {...footer} />
     </div>
   );
-}
+};
+
+export default Home;
