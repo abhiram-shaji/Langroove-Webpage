@@ -42,7 +42,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Button
             type="primary"
             href="your_playstore_link_here"
-            className="custom-button paragraph"
+            className="custom-button"
             style={{
               margin: "5px",
               display: "flex",
@@ -55,7 +55,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Button
             type="primary"
             href="your_apk_download_link_here"
-            className="custom-button paragraph"
+            className="custom-button"
             style={{
               margin: "5px",
               display: "flex",
