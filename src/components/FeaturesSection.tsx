@@ -21,11 +21,9 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ coreFeatures }) => (
         key={feature.title}
         gutter={[16, 16]}
         align="middle"
-        className={
-          index % 2 === 0
-            ? styles.featuresRow
-            : `${styles.featuresRow} ${styles.featuresRowReverse}`
-        }
+        className={`${styles.featuresRow} ${
+          index === 1 ? styles.featuresRowBlack : ""
+        } ${index % 2 === 0 ? styles.featuresRowReverse : ""}`}
       >
         <Col xs={24} md={12}>
           <img
@@ -35,7 +33,9 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ coreFeatures }) => (
           />
         </Col>
         <Col xs={24} md={12}>
-          <Title className="title-font" level={4}>{feature.title}</Title>
+          <Title className="title-font" level={4}>
+            {feature.title}
+          </Title>
           <Paragraph className="paragraph">{feature.description}</Paragraph>
         </Col>
       </Row>
