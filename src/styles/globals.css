@@ -10,6 +10,13 @@ section {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+.title-font {
+  font-family: 'Altera', sans-serif; /* Fallback to sans-serif */
+  font-weight: bold; /* Optional: set font weight */
+  line-height: 1.2; /* Optional: adjust line height */
+  color: #333; /* Optional: adjust color */
+}
+
 /* Hero section styles */
 .hero-section {
   position: relative;
@@ -89,7 +96,7 @@ section {
 /* Desktop-specific hero text styles */
 @media (min-width: 769px) {
   .hero-section {
-    padding-left: 50px;
+    padding: 50px;
     flex-direction: row; /* Arrange items side by side */
     justify-content: flex-start; /* Align content to the left */
   }
@@ -101,7 +108,7 @@ section {
   .hero-text {
     padding: 50px;
     flex-direction: row; /* Arrange text and image side by side */
-    max-width: 60%; /* Limit width of the transparent section */
+    max-width: 100%; /* Limit width of the transparent section */
     gap: 40px; /* Larger gap for desktop view */
   }
 }

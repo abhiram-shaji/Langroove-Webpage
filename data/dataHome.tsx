@@ -1,7 +1,7 @@
 const dataHome = {
   
   heroSection: {
-    tagline: "Learn, Connect, and Grow Together.",
+    tagline: "Learn, Connect, and Grow Together",
     ctas: [
       { text: "Download App", link: "/download" },
       { text: "Learn More", link: "/learn-more" },
