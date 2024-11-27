@@ -1,40 +1,53 @@
-import { Typography } from "antd";
-const { Title } = Typography;
+import React from "react";
+import styles from "../styles/Footer.module.css";
 
-interface QuickLink {
-  text: string;
-  link: string;
-}
-
-interface SocialMedia {
-  platform: string;
-  link: string;
-}
+// Import icons individually
+import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram, FaGlobe } from "react-icons/fa";
 
 interface FooterProps {
-  quickLinks: QuickLink[];
-  socialMedia: SocialMedia[];
+  name: string;
+  createdBy: string;
+  email: string;
+  linkedin: string;
+  github: string;
+  instagram: string;
+  portfolio: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ quickLinks, socialMedia }) => (
-  <footer style={{ padding: "20px", textAlign: "center", backgroundColor: "#001529", color: "#fff" }}>
-    <div>
-      <Title level={4} style={{ color: "#fff" }}>Quick Links</Title>
-      {quickLinks.map((link) => (
-        <a key={link.text} href={link.link} style={{ margin: "0 10px", color: "#1890ff" }}>
-          {link.text}
-        </a>
-      ))}
-    </div>
-    <div style={{ marginTop: "10px" }}>
-      <Title level={4} style={{ color: "#fff" }}>Follow Us</Title>
-      {socialMedia.map((social) => (
-        <a key={social.platform} href={social.link} style={{ margin: "0 10px", color: "#1890ff" }}>
-          {social.platform}
-        </a>
-      ))}
-    </div>
-  </footer>
-);
+const Footer: React.FC<FooterProps> = ({
+  name,
+  createdBy,
+  email,
+  linkedin,
+  github,
+  instagram,
+  portfolio,
+}) => {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.createdBy}>{createdBy}</p>
+        <div className={styles.socialLinks}>
+          <a href={`mailto:${email}`} className={styles.link}>
+            <FaEnvelope className={styles.icon} /> Email
+          </a>
+          <a href={linkedin} target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <FaLinkedin className={styles.icon} /> LinkedIn
+          </a>
+          <a href={github} target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <FaGithub className={styles.icon} /> GitHub
+          </a>
+          <a href={instagram} target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <FaInstagram className={styles.icon} /> Instagram
+          </a>
+          <a href={portfolio} target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <FaGlobe className={styles.icon} /> Portfolio
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

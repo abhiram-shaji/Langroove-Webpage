@@ -73,7 +73,12 @@ body {
   height: auto;
   border-radius: 10px;
   padding: 5%;
-  background-color: purple;
+  background-color: #9656a1;
+  
+}
+
+.hero-text-image img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
 
 .custom-button {
@@ -84,8 +89,9 @@ body {
 }
 
 .custom-button:hover {
-  background-color: maroon !important; /* Custom hover background color */  /* Custom hover border color */
-  color: #fff;               /* Custom hover text color */
+  background-color: #e53170 !important; /* Custom hover background color */  /* Custom hover border color */
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */          /* Custom hover text color */
 }
 /* Button container styles */
 .hero-text-content > div {

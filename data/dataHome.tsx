@@ -33,19 +33,17 @@ const dataHome = {
       },
     ],
   },
-
+  
   footer: {
-    quickLinks: [
-      { text: "Documentation", link: "/documentation" },
-      { text: "Privacy Policy", link: "/privacy-policy" },
-    ],
-
-    socialMedia: [
-      { platform: "Instagram", link: "https://instagram.com/breifkace" },
-      { platform: "Facebook", link: "https://facebook.com/langroove" },
-      { platform: "Twitter", link: "https://twitter.com/langroove" },
-    ],
+    name: "Langroove",
+    createdBy: "Created by Abhiram Shaji",
+    email: "write4abhiram@gmail.com",
+    linkedin: "https://www.linkedin.com/in/abhiram-kace/",
+    github: "https://github.com/abhiram-shaji/",
+    instagram: "https://www.instagram.com/breifkace/",
+    portfolio: "http://worksofabhiram.live",
   },
+
 };
 
 export default dataHome;

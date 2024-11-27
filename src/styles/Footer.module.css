@@ -1,0 +1,48 @@
+.footer {
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fffffe;
+  }
+  
+  .createdBy {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fffffe;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .link {
+    margin: 10px 15px;
+    color: #fffffe;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+  }
+  
