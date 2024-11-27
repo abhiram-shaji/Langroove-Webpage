@@ -32,6 +32,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
       {/* Text and Buttons Section */}
       <div className="hero-text-content">
+        <h1>Langroove</h1>
         <Title className="title-font" level={2} style={{ marginBottom: "10px" }}>
           {tagline}
         </Title>
