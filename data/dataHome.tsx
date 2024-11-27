@@ -41,7 +41,7 @@ const dataHome = {
     linkedin: "https://www.linkedin.com/in/abhiram-kace/",
     github: "https://github.com/abhiram-shaji/",
     instagram: "https://www.instagram.com/breifkace/",
-    portfolio: "http://worksofabhiram.live",
+    portfolio: "http://worksofabhiram.com",
   },
 
 };
