@@ -22,10 +22,10 @@ body {
 .hero-section {
   position: relative;
   height: 100vh; /* Full height for the hero section */
-  overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Center hero text vertically */
+  justify-content: center; /* Center hero text horizontally */
+  overflow: hidden;
 }
 
 .hero-background {
@@ -42,17 +42,18 @@ body {
 /* Hero section styles (mobile-first) */
 .hero-text {
   display: flex;
-  flex-direction: column; /* Stack content vertically for mobile */
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.9); /* Transparent background for text */
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background for text */
   padding: 20px;
   border-radius: 10px;
   max-width: 90%; /* Responsive width for mobile */
-  text-align: center; /* Center-align text on mobile */
-  gap: 20px; /* Add space between content and image */
-  min-height: 80vh; 
+  text-align: center; /* Center-align text */
+  gap: 20px; /* Add space between text and buttons */
+  min-height: auto; /* Remove fixed height for flexibility */
+  margin: auto; /* Center the container horizontally and vertically */
 }
 
 .hero-text-content {
