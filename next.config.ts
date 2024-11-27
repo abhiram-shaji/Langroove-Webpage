@@ -1,4 +1,3 @@
-// next.config.ts
 const withLess = require('next-with-less');
 
 module.exports = withLess({

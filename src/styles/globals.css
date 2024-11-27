@@ -45,6 +45,7 @@ section {
   max-width: 90%; /* Responsive width for mobile */
   text-align: center; /* Center-align text on mobile */
   gap: 20px; /* Add space between content and image */
+  min-height: 80vh; 
 }
 
 .hero-text-content {
@@ -66,6 +67,24 @@ section {
   padding: 5%;
   background-color: purple;
 }
+
+.custom-button {
+ text-decoration: none;
+ padding: 4%;
+}
+
+.custom-button:hover {
+  background-color: maroon; /* Custom hover background color */
+  border-color: #1d39c4;     /* Custom hover border color */
+  color: #fff;               /* Custom hover text color */
+}
+/* Button container styles */
+.hero-text-content > div {
+  display: flex; /* Align items side by side */
+  justify-content: center; /* Center align on mobile screens */
+  gap: 15px; /* Add space between buttons */
+}
+
 
 /* Desktop-specific hero text styles */
 @media (min-width: 769px) {
