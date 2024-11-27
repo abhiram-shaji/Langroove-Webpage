@@ -26,8 +26,8 @@ const Footer: React.FC<FooterProps> = ({
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.name}>{name}</p>
-        <p className={styles.createdBy}>{createdBy}</p>
+        <p className={`${styles.name} `}>{name}</p>
+        <p className={`${styles.createdBy} `}>{createdBy}</p>
         <div className={styles.socialLinks}>
           <a href={`mailto:${email}`} className={styles.link}>
             <FaEnvelope className={styles.icon} /> Email
