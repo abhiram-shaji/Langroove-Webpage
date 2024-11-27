@@ -7,7 +7,7 @@ body {
 /* Typography styles */
 h1 {
   font-family: 'Altera', sans-serif !important; /* Fallback to sans-serif */
-  font-size: 52px !important;
+  font-size: 60px !important;
   color: #fffffe !important;
   font-weight: bold;
 }
@@ -20,7 +20,7 @@ h1 {
 
 .title-font {
   font-family: 'Altera', sans-serif !important; /* Fallback to sans-serif */
-  font-size: 30px !important;
+  font-size: 28px !important;
   color: #fffffe !important;
 }
 
