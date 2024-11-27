@@ -35,14 +35,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <Title className="title-font" level={2} style={{ color: "white", marginBottom: "10px" }}>
           {tagline}
         </Title>
-        <Paragraph style={{ color: "white", maxWidth: "600px" }}>
+        <Paragraph className="paragraph" style={{ color: "white", maxWidth: "600px" }}>
           {description}
         </Paragraph>
         <div style={{ marginTop: "20px"}}>
           <Button
             type="primary"
             href="your_playstore_link_here"
-            className="custom-button"
+            className="custom-button paragraph"
             style={{
               margin: "5px",
               display: "flex",
@@ -55,7 +55,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Button
             type="primary"
             href="your_apk_download_link_here"
-            className="custom-button"
+            className="custom-button paragraph"
             style={{
               margin: "5px",
               display: "flex",

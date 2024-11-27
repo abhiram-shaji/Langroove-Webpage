@@ -15,49 +15,22 @@ const dataHome = {
     coreFeatures: [
       {
         title: "Real-time Text Chat with Translation",
+        image: "https://i.ibb.co/PtR0tVZ/photo-6213119653857837448-y.jpg",
         description:
-          "Instantly translate conversations to your chosen language for seamless communication.",
+          "Instantly translate conversations to your chosen language for seamless communication. Practice new languages with ease by viewing side-by-side translations, helping you improve your vocabulary and comprehension skills in real-time.",
       },
       {
         title: "Social Features",
+        image: "https://i.ibb.co/vsxd6BB/photo-6213119653857837447-y.jpg",
         description:
-          "Add friends and connect with other learners. Share thoughts and ideas on public topic walls.",
+          "Add friends and connect with a diverse community of language learners from around the world. Engage in one-on-one conversations or join group chats to exchange ideas, share experiences, and motivate each other on your learning journey.",
       },
       {
         title: "Topic Walls for Engagement",
+        image: "https://i.ibb.co/pKkJdnt/pexels-bertellifotografia-3856027.jpg",
         description:
-          "Participate in curated discussions to practice your language skills in real-world scenarios.",
+          "Participate in curated discussions and themed topic walls designed to simulate real-world scenarios. Practice reading, writing, and expressing your thoughts in your target language, gaining confidence through active engagement.",
       },
-    ],
-  },
-
-  testimonialsSection: {
-    testimonials: [
-      {
-        quote:
-          "Langroove makes language learning so fun and practical! I’ve connected with learners worldwide.",
-        author: "Maria L., Spain",
-      },
-      {
-        quote:
-          "The translation feature helped me understand my friends better while improving my vocabulary.",
-        author: "Ben H., USA",
-      },
-      {
-        quote:
-          "Topic walls are a game-changer for practicing new words and phrases!",
-        author: "Ahmed K., UAE",
-      },
-    ],
-  },
-
-  screenshotsSection: {
-    title: "Explore Langroove",
-    carousel: [
-      { image: "https://i.ibb.co/cC8ZDSL/pexels-minan1398-853168.jpg", alt: "Home screen" },
-      { image: "https://i.ibb.co/b2Gxhxn/pexels-walls-io-440716388-17724740.jpg", alt: "Profile customization" },
-      { image: "https://i.ibb.co/N7G2XQ6/pexels-adrienn-638530-1542085.jpg", alt: "Interactive topic walls" },
-      { image: "https://i.ibb.co/BTSjBYR/pexels-lastly-699122.jpg", alt: "Friends list" },
     ],
   },
 

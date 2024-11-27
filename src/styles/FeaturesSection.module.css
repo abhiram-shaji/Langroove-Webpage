@@ -1,0 +1,30 @@
+.featuresSection {
+  padding: 50px 20px; /* Default padding for mobile/tablet */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the section */
+}
+
+@media (min-width: 992px) {
+  .featuresSection {
+    padding: 50px 80px; /* Add more padding on desktop screens */
+  }
+}
+
+.featuresSectionTitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featuresRow {
+  margin-bottom: 40px;
+}
+
+.featuresRowReverse {
+  flex-direction: row-reverse;
+}
+
+.featuresImage {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,20 +1,18 @@
 /* src/styles/globals.css */
 
-/* General styles */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
-section {
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+.paragraph {
+  font-size: 18px !important;
 }
 
 .title-font {
-  font-family: 'Altera', sans-serif; /* Fallback to sans-serif */
-  font-weight: bold; /* Optional: set font weight */
-  line-height: 1.2; /* Optional: adjust line height */
-  color: #333; /* Optional: adjust color */
+  font-family: 'Altera', sans-serif !important; /* Fallback to sans-serif */
+  font-size: 36px !important;
 }
 
 /* Hero section styles */

@@ -1,9 +1,13 @@
-import { Row, Col, Typography, Card } from "antd";
+import React from "react";
+import { Row, Col, Typography } from "antd";
+import styles from "../styles/FeaturesSection.module.css";
+
 const { Title, Paragraph } = Typography;
 
 interface Feature {
   title: string;
   description: string;
+  image: string;
 }
 
 interface FeaturesSectionProps {
@@ -11,18 +15,31 @@ interface FeaturesSectionProps {
 }
 
 const FeaturesSection: React.FC<FeaturesSectionProps> = ({ coreFeatures }) => (
-  <section style={{ padding: "50px 20px" }}>
-    <Title level={3}>Core Features</Title>
-    <Row gutter={[16, 16]}>
-      {coreFeatures.map((feature) => (
-        <Col key={feature.title} xs={24} sm={12} lg={8}>
-          <Card hoverable>
-            <Title level={4}>{feature.title}</Title>
-            <Paragraph>{feature.description}</Paragraph>
-          </Card>
+  <section className={styles.featuresSection}>
+    {coreFeatures.map((feature, index) => (
+      <Row
+        key={feature.title}
+        gutter={[16, 16]}
+        align="middle"
+        className={
+          index % 2 === 0
+            ? styles.featuresRow
+            : `${styles.featuresRow} ${styles.featuresRowReverse}`
+        }
+      >
+        <Col xs={24} md={12}>
+          <img
+            src={feature.image}
+            alt={feature.title}
+            className={styles.featuresImage}
+          />
         </Col>
-      ))}
-    </Row>
+        <Col xs={24} md={12}>
+          <Title className="title-font" level={4}>{feature.title}</Title>
+          <Paragraph className="paragraph">{feature.description}</Paragraph>
+        </Col>
+      </Row>
+    ))}
   </section>
 );
 
