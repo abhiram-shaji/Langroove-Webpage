@@ -2,7 +2,6 @@ import { Button, Typography } from "antd";
 import DownloadOutlined from '@ant-design/icons/lib/icons/DownloadOutlined';
 import GoogleOutlined from '@ant-design/icons/lib/icons/GoogleOutlined';
 
-
 const { Title, Paragraph } = Typography;
 
 interface HeroSectionProps {
@@ -39,16 +38,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <Paragraph className="paragraph" style={{ color: "white", maxWidth: "600px" }}>
           {description}
         </Paragraph>
-        <div style={{ marginTop: "20px"}}>
+        <div className="button-container">
           <Button
             type="primary"
             href="your_playstore_link_here"
             className="custom-button"
-            style={{
-              margin: "5px",
-              display: "flex",
-              alignItems: "center",
-            }}
           >
             <GoogleOutlined style={{ fontSize: "16px", marginRight: "8px" }} />
             Get it on Playstore
@@ -57,11 +51,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             type="primary"
             href="your_apk_download_link_here"
             className="custom-button"
-            style={{
-              margin: "5px",
-              display: "flex",
-              alignItems: "center",
-            }}
           >
             <DownloadOutlined
               style={{ fontSize: "16px", marginRight: "8px" }}
