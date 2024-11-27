@@ -22,8 +22,8 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ coreFeatures }) => (
         gutter={[16, 16]}
         align="middle"
         className={`${styles.featuresRow} ${
-          index === 1 ? styles.featuresRowBlack : ""
-        } ${index % 2 === 0 ? styles.featuresRowReverse : ""}`}
+          index % 2 === 1 ? styles.featuresRowReverse : ""
+        } ${index === 1 ? styles.featuresRowBlack : ""}`}
       >
         <Col xs={24} md={12}>
           <img

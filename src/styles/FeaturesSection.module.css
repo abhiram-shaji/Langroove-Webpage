@@ -11,24 +11,15 @@
   border-radius: 8px; /* Optional for rounded corners */
 }
 
-
-@media (min-width: 992px) {
-  .featuresSection {
-    padding: 50px 80px; /* Add more padding on desktop screens */
-  }
-}
-
-.featuresSectionTitle {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .featuresRow {
   margin-bottom: 40px;
+  text-align: center; /* Default for mobile: Center text */
+  display: flex;
+  flex-direction: column; /* Default layout for mobile (stacked) */
 }
 
 .featuresRowReverse {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse; /* Reverse layout for mobile */
 }
 
 .featuresImage {
@@ -37,3 +28,18 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Desktop styles */
+@media (min-width: 992px) {
+  .featuresSection {
+    padding: 50px 80px; /* Add more padding on desktop screens */
+  }
+
+  .featuresRow {
+    text-align: left; /* Align text to the left for desktop screens */
+    flex-direction: row; /* Default layout for desktop (side-by-side) */
+  }
+
+  .featuresRowReverse {
+    flex-direction: row-reverse; /* Reverse layout for desktop */
+  }
+}
