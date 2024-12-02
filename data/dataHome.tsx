@@ -15,19 +15,19 @@ const dataHome = {
     coreFeatures: [
       {
         title: "Real-time Text Chat with Translation",
-        image: "https://i.ibb.co/PtR0tVZ/photo-6213119653857837448-y.jpg",
+        image: "https://i.ibb.co/HK21Wdm/iphone-14-pro-mockup-psd-1733126146330.png",
         description:
           "Instantly translate conversations to your chosen language for seamless communication. Practice new languages with ease by viewing side-by-side translations, helping you improve your vocabulary and comprehension skills in real-time.",
       },
       {
         title: "Social Features",
-        image: "https://i.ibb.co/vsxd6BB/photo-6213119653857837447-y.jpg",
+        image: "https://i.ibb.co/qJwxcWT/i-Phone-16-Pro-Titanium-Free-psd-Mockup-psd-1733126677046.png",
         description:
           "Add friends and connect with a diverse community of language learners from around the world. Engage in one-on-one conversations or join group chats to exchange ideas, share experiences, and motivate each other on your learning journey.",
       },
       {
         title: "Topic Walls for Engagement",
-        image: "https://i.ibb.co/pKkJdnt/pexels-bertellifotografia-3856027.jpg",
+        image: "https://i.ibb.co/PCYbQ2Q/smartphone-mockup-psd-1733126246994.png",
         description:
           "Participate in curated discussions and themed topic walls designed to simulate real-world scenarios. Practice reading, writing, and expressing your thoughts in your target language, gaining confidence through active engagement.",
       },
