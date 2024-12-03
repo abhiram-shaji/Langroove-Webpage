@@ -33,7 +33,7 @@ The **Langroove Webpage** serves as the primary landing page for the Langroove a
 ## Live Demo
 
 Check out the live version of the Langroove Webpage:  
-**[Langroove Landing Page]([https://github.com/abhiram-shaji/Langroove-Webpage](https://langroove-webpage.vercel.app/)**
+**[Langroove Landing Page]([https://langroove-webpage.vercel.app/])**
 
 ---
 
